@@ -1,0 +1,210 @@
+@import "../../index.css";
+
+/* Footer Container */
+.footer {
+    /* Add styles for the footer container here */
+    margin: 0 10%;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    margin-top: 10%;
+    margin-bottom: 1%;
+  }
+
+  /* .footer:hover{
+    animation-name: var(--slideFromBottom);
+    animation-duration: var(--animation-duration);
+    animation-timing-function: var(--animation-timing-function);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: var(--transition);
+  } */
+  
+  /* Footer Left Division */
+  .footerLeftDiv {
+    /* Add styles for the left division of footer here */
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: start;
+    width: 25%;
+    /* justify-content: center; */
+
+  }
+  
+  /* Footer Left Division Title */
+  .footerLeftDivTitle {
+    /* Add styles for the title of the left division of footer here */
+    color: #14183E;
+    font-size: 30px;
+    font-family: "Inter";
+    font-weight: 700;
+    /* line-height: 20px; */
+    text-align: center;
+
+  }
+  
+  /* Footer Left Division Subtitle */
+  .footerLeftDivSubTitle {
+    /* Add styles for the subtitle of the left division of footer here */
+    color: #5E6282;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    letter-spacing: .2px;
+    word-wrap: break-word;
+    width: 70%;
+
+  }
+  
+  /* Footer Items List */
+  .footerItems {
+    /* Add styles for the list of footer items here */
+    display: flex;
+    /* gap: 30px; */
+    list-style: none;
+    justify-content: space-between;
+    width: 75%;
+  }
+  
+  /* Footer Item */
+  .footerItem {
+    /* Add styles for each individual footer item here */
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  /* Footer Cards Container */
+  .footerCardsContainer {
+    /* Add styles for the container of footer cards here */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Footer Cards Title */
+  .footerCardsTitle {
+    /* Add styles for the title of footer cards here */
+    color: #080809;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 600;
+    letter-spacing: .2px;
+
+  }
+  
+  /* Footer Cards Items List */
+  .footerCardsItems {
+    /* Add styles for the list of footer card items here */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  /* Footer Cards Item */
+  .footerCardsItem a{
+    /* Add styles for each individual footer card item here */
+    text-decoration: none;
+    color:#5E6282;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+    letter-spacing: .2px;
+
+  }
+  
+  /* Footer Contact Links Container */
+  .footerContactLinksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+  /* Footer Contact Social Links List */
+  .footerContactSocialLinksList {
+    /* Add styles for the list of footer contact social links here */
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  /* Footer Contact Social Links List Item */
+  .footerContactSocialLinksListItem {
+    /* Add styles for each individual item in the list of footer contact social links here */
+
+  }
+  
+  /* Social Icons */
+  .socialIcons {
+    /* Add styles for the social icons here */
+  }
+  
+  /* Discover Text */
+  .discoverText {
+    /* Add styles for the discover text here */
+    text-decoration: none;
+    color:#5E6282;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+    letter-spacing: .2px;
+    margin-left: 4%;
+  }
+  
+  /* Store Links Container */
+  .storeLinksContainer {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 3%;
+  }
+  
+  /* Store Links Content */
+  .storeLinksContent {
+    /* Add styles for the content of store links here */
+  }
+  
+  /* Footer Button Container */
+  .footerButtonContainer {
+    /* Add styles for the container of footer buttons here */
+    display: flex;
+    background: #080809;
+    border-radius: 50px;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 11px;
+  }
+  /* Footer Button Image */
+  .footerButtonImage {
+    /* Add styles for the image of footer buttons here */
+    width: 30%;
+  }
+  
+  /* Footer Button Info */
+  .footerButtonInfo {
+    /* Add styles for the information of footer buttons here */
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+  }
+  
+  /* Footer Button Title */
+  .footerButtonTitle {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 400;
+    width: 109px;
+
+  }
+  
+  /* Footer Button Subtitle */
+  .footerButtonSubtitle {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+  

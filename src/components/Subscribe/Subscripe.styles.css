@@ -1,0 +1,144 @@
+
+@import "../../index.css";
+
+
+.subscribe {
+    position: relative;
+    margin: 14% 15%;
+    /* margin-top: 14%; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+
+
+  .disable-hover {
+    pointer-events: none;
+  }
+ 
+  
+  .subscribe:hover {
+    transition-delay: 0.3s; 
+  }
+  
+
+  .subscribe_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #DFD7F9;
+    width: 100%;
+    border-radius: 100px 12px 12px 12px;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 0px;
+    position: relative;
+
+  }
+  
+  /* Styles for the heading inside the subscribe section */
+  .subscribe_content h1 {
+    color: #5E6282;
+    font-size: 24px;
+    font-family: "Inter";
+    font-weight: 500;
+    text-align: center;
+    padding: 26px 55px;
+
+  }
+  
+  /* Styles for the container of the email input and subscribe button */
+  .subscribeButtonContainer {
+    /* Add styles for the container here */
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  
+  /* Styles for the email input field */
+  .emailInput {
+    /* Add styles for the email input field here */
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #14183E;
+    font-size: 18px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: none;
+    width: 36vh;
+    letter-spacing: 0.5px;
+  }
+  
+  .emailInput::placeholder{
+    color: #5E6282;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+  }
+  /* Styles for the subscribe button */
+  .subscribeButton {
+    /* Add styles for the subscribe button here */
+    outline: none;
+    background-color: rgb(255, 148, 109);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 20px 52px;
+    border-radius: 10px;
+    border: none;
+
+  }
+  
+  /* Styles for the bottom left image */
+  .bottom_left_image {
+    /* Add styles for the bottom left image here */
+    width: 20%;
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    right: 0;
+
+  }
+  
+  /* Styles for the top right image */
+  .top_right_image {
+    /* Add styles for the top right image here */
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+  
+  }
+
+
+  @media screen and (max-width: 830px) {
+  
+    .subscribe{
+        margin-top: 25%;
+    }
+    .subscribe_content{
+        padding: 45px 0px;
+    }
+
+    .subscribeButtonContainer{
+        flex-direction: column;
+    }
+
+    .subscribe_content h1{
+        font-size: 3.5vh;
+        padding: 7px 10px;
+    }
+
+    .emailInput{
+        width: 27vh;
+    }
+  }
+  

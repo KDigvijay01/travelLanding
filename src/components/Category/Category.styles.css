@@ -1,0 +1,114 @@
+@import "../../index.css";
+
+
+.category {
+    /* Styles for the category section */
+    position: relative;
+    display: flex;
+    margin: 0 10%;
+    margin-top: 10%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+  }
+
+  /* .category:hover{
+    animation-name: var(--slideFromBottom);
+    animation-duration: var(--animation-duration);
+    animation-timing-function: var(--animation-timing-function);
+    transition: var(--transition);
+    animation-iteration-count: 1;
+  } */
+  
+  .category_header {
+    /* Styles for the category header */
+    color: #5E6282;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+  }
+  
+  .category_title {
+    /* Styles for the category title */
+    color: #14183E;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 500;
+  }
+  
+  .category_list {
+    /* Styles for the category list */
+    display: flex;
+    gap: 20px;
+    margin-top: 5%;
+  }
+  
+  .category_list_item {
+    /* Styles for the category list item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 0px 0px 10px rgba(20, 24, 62, .1), 0px 0px 10px rgba(78, 78, 115, .5); */
+    /* box-shadow: 0px 0px 20px rgba(20, 24, 62, 0.1), 0px 0px 20px rgba(78, 78, 115, 0.5); */
+    /* box-shadow: 0px 2px 6px rgba(20, 24, 62, 0.1), 0px 4px 12px rgba(78, 78, 115, 0.2); */
+    -webkit-box-shadow: 0 2px 20px rgba(30,10,58,.04);
+    box-shadow: 0 2px 20px rgba(30,10,58,.04);
+    justify-content: center;
+    border-radius: 10px;
+
+    gap: 46px;
+    padding: 9vh 4vh;
+    width: 48%;
+  }
+
+  .category_list #2{
+    padding: 4vh 4vh !important;
+    justify-content: flex-start  !important;
+  }
+  
+  .category_list_icon {
+    /* Styles for the category list item icon */
+  }
+  
+  .category_list_title {
+    /* Styles for the category list item title */
+    color: #14183E;
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 400;
+  }
+  
+  .category_list_subtitle {
+    /* Styles for the category list item subtitle */
+    text-align: center;
+    word-break: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+    color: #5E6282;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 400;
+  }
+
+
+
+
+  @media screen and (max-width: 830px) {
+    .category{
+        margin-top: 18%;
+    }
+
+    .category_list{
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .category_list_item{
+        flex-direction: column;
+      
+    }
+    
+  }
+  
