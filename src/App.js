@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import Subscribe from './components/Subscribe';
 import Testimonials from './components/Testimonial';
 import TopSellings from './components/TopSelling';
-import ParallaxDiv from "./components/Parallax";
+
 
 
 
