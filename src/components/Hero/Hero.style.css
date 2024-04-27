@@ -141,4 +141,7 @@
   .heroImage {
        width: 95%;
 }
+.heroTitle {
+  font-size: 3rem;
+}
 }
