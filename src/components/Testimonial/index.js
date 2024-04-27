@@ -61,19 +61,9 @@ const dataArray = [
 ];
 
 const Testimonials = () => {
-  const settings = {
-    arrows: false,
-    dots: false,
-    infinite: true,
-    speed: 1500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3500,
-  };
 
   return (
-    <section className="testimonials scroll_animation_to_top" id="testimonial">
+    <section className="testimonials" id="testimonial">
       <div className="testimonials_left">
         <h4 className="testimonials_header">Testimonials</h4>
         <h1 className="testimonials_title">What people say about Us.</h1>
@@ -81,14 +71,13 @@ const Testimonials = () => {
       <div className="testimonials_slider_container">
         <Swiper
           spaceBetween={10}
-          slidesPerView={3}
+          slidesPerView={1}
           loop={true}
-          parallax={true}
-          speed={1200}
-          // autoplay={{
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          // }}
+          speed={4000}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: true,
+          }}
           // navigation={true}
           breakpoints={{
             320: {
@@ -120,7 +109,9 @@ const Testimonials = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
           {dataArray.map((item) => (
-            <SwiperSlide>
+            <SwiperSlide
+            
+            >
               <div className="testimonials_sliders">
                 <div key={item.id} className="testimonials_slider">
                   {/* <img src="assets/testimonials/quote.svg" alt="quote"/> */}

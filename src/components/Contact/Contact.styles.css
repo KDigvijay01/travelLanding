@@ -53,9 +53,7 @@
   
   /* Footer Items List */
   .footerItems {
-    /* Add styles for the list of footer items here */
     display: flex;
-    /* gap: 30px; */
     list-style: none;
     justify-content: space-between;
     width: 75%;
@@ -106,6 +104,7 @@
     font-family: "Roboto";
     font-weight: 400;
     letter-spacing: .2px;
+    cursor: pointer;
 
   }
   
@@ -125,9 +124,9 @@
   }
   
   /* Footer Contact Social Links List Item */
-  .footerContactSocialLinksListItem {
-    /* Add styles for each individual item in the list of footer contact social links here */
-
+  .footerContactSocialLinksListItem a{
+    display: flex;
+    cursor: pointer;
   }
   
   /* Social Icons */
@@ -169,6 +168,7 @@
     align-items: center;
     gap: 10px;
     padding: 7px 11px;
+    cursor: pointer;
   }
   /* Footer Button Image */
   .footerButtonImage {

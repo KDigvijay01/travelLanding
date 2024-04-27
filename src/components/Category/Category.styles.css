@@ -51,7 +51,7 @@
     padding: 9vh 4vh;
     width: 48%;
     background-color: #f8f4f4;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   .category_list_item:hover{
