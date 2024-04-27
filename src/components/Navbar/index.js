@@ -31,9 +31,9 @@ const Navbar = () => {
                 <img src={
                     open ? "assets/nav/close.svg" : "assets/nav/menu.svg"
                 } alt="" className='menuIcon' onClick={()=>setOpen(!open)}/>
-                <ul className={`menu ${open && "menuOpen"}`} onClick={()=>setOpen(false)}>
+                <ul className={`navbarMenu ${open && "menuOpen"}`} onClick={()=>setOpen(false)}>
                     <li className='menuItem'>
-                        <a href="#category">Category</a>
+                        <a href="#category">Categories</a>
                     </li>
 
                     <li className='menuItem'>
@@ -44,13 +44,13 @@ const Navbar = () => {
                         <a href="#eazy_and_fast">Eazy and fast</a>
                     </li>
 
-                    <li className='menuItem'>
+                    {/* <li className='menuItem'>
                         <a href="#testimonial">Testimonials</a>
-                    </li>
+                    </li> */}
 
-                    <li className='menuItem'>
+                    {/* <li className='menuItem'>
                         <a href="#subscribe">Subscribe</a>
-                    </li>
+                    </li> */}
                     <li className='menuItem'>
                         <a href="#footer">About us </a>
                     </li>

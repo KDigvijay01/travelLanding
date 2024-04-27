@@ -18,13 +18,7 @@
   gap: 20px;
 }
 
-/* .heroSection .heroLeftContent {
-  animation-name: var(--slide-from-left);
-  animation-duration: var(--animation-duration);
-  animation-timing-function: var(--animation-timing-function);
-  animation-iteration-count: 1;
-  transition: var(--transition);
-} */
+
 
 .heroheader {
   /* Styles for the hero header */
@@ -36,17 +30,11 @@
 }
 
 .heroTitle {
-  /* Styles for the hero title */
-  /* background: #181E4B; */
-  /* background: linear-gradient(119deg, rgba(93, 58, 180, 1) 0%, rgba(136, 116, 160, 1) 49%, rgba(180, 123, 177, 1) 100%); */
-  /* background: linear-gradient(119deg, rgba(73, 43, 147, 1) 0%, rgba(110, 53, 107, 1) 100%); */
-  /* background: linear-gradient(126deg, rgba(13, 33, 70, 0.98) 0%, rgba(180, 100, 161, 1) 100%); */
-  /* background: linear-gradient(73deg, rgba(20, 2, 80, 0.98) 0%, rgba(147, 59, 126, 1) 100%); */
-  /* background: linear-gradient(73deg, rgba(20, 2, 80, 0.98) 0%, rgba(73, 7, 57, 1) 100%); */
+
   background: linear-gradient(73deg, rgba(20, 2, 80, 0.98) 0%, rgba(100, 1, 69, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 74px;
+  font-size: 4.7rem;
   font-family: "Inter";
   font-weight: 800;
   transition: all 2s;
@@ -60,7 +48,6 @@
   font-family: "Roboto";
   font-weight: 300;
   color: #27282b;
-  ;
 
 }
 
@@ -142,7 +129,16 @@
   .heroTitle {
     text-align: center;
   }
+  .heroImage {
+    width: 72%;
+}
 
 }
 
 
+
+@media screen and (max-width: 500px) {
+  .heroImage {
+       width: 95%;
+}
+}

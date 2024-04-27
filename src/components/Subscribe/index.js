@@ -4,7 +4,7 @@ import "./Subscripe.styles.css";
 
 const Subscribe = () => {
   return (
-    <section className='subscribe scroll_animation_to_top' id="subscribe">
+    <section className='subscribeInfo scroll_animation_to_top' id="subscribe">
         <div className='subscribe_content'>
             <h1>
             Subscribe to get information, latest news and other

@@ -3,14 +3,16 @@
 
 .App{
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: #f0f0f5;
-  /* background: linear-gradient(126deg, rgba(202, 203, 203, 0.36) 0%, rgba(100, 180, 133, 1) 100%); */
-  /* background: linear-gradient(148deg, rgba(74, 74, 157, 1) 0%, rgba(122, 74, 157, 1) 49%, rgba(115, 108, 137, 1) 100%); */
-  /* background: linear-gradient(148deg, rgba(83, 74, 157, 0.77) 0%, rgba(180, 109, 172, 1) 100%); */
-  /* background: linear-gradient(117deg, rgba(171, 166, 183, 1) 0%, rgba(172, 168, 190, 1) 100%); */
-  /* overflow: hidden; */
-  /* overflow: auto; */
 }
 
 
+
+@media screen and (max-width: 800px) {
+  .App{
+    display: block;
+    overflow: hidden;
+  }
+
+}

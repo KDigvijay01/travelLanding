@@ -24,38 +24,65 @@ html{
 }
 
 [class*="scroll_animation"]{
-  animation-duration: var(--animation-duration);
+  /* animation-duration: var(--animation-duration); */
   animation-timing-function: var(--animation-timing-function);
   animation-iteration-count: 1;
-  transition: var(--transition);
+  /* transition: var(--transition); */
   /* pointer-events: none; */
-  transition-delay: 0;
+  /* transition-delay: 0; */
 }
 
 [class*="scroll_animation"].animate_to_top{
-  transition-delay: 3s;
+  transition-delay: .2s;
+  transition: transform .5s ease-in;
+  animation-duration: .5s;
 }
-[class*="scroll_animation"].animato_to_right{
-  transition-delay: .5s;
+[class*="scroll_animation"].animate_to_right{
+  transition-delay: .2s;
+  transition: transform .5s ease-out;
+  animation-duration: .5s;
 }
-[class*="scroll_animation"].animato_to_left{
-  transition-delay: .5s;
+[class*="scroll_animation"].animate_to_left{
+  transition-delay: .3s;
+  transition: transform .5s ease-out;
+  animation-duration: .5s;
 }
 
 .animate_to_top{
   animation-name: animateToTop;
-  animation-delay: 1.2s;
+  animation-delay: .5s;
 }
 
-.animato_to_right{
+.animate_to_right{
   animation-name: animateToRight;
-  animation-delay: 1.2s;
+  animation-delay: .5s;
 }
 
-.animato_to_left{
+.animate_to_left{
   animation-name: animateToLeft;
-  animation-delay: 1.2s;
+  animation-delay: .5s;
 }
+
+.card_animation{
+  animation: shadow-drop-2-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@keyframes shadow-drop-2-center {
+  0% {
+            transform: translateZ(0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+
+            transform: translateZ(50px);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+
+
 /* Define keyframes */
 @keyframes animateToRight {
   from {

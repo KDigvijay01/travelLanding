@@ -4,23 +4,18 @@
 .testimonials {
   /* Your styles for the testimonials section */
   position: relative;
-  margin: 0 10%;
+  /* margin: 0 10%; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  margin: 5% 10% 12% 10%;
 
 
 }
 
-  /* .testimonials:hover{
-    animation-name: var(--slideFromBottom);
-    animation-duration: var(--animation-duration);
-    animation-timing-function: var(--animation-timing-function);
-    animation-iteration-count: 1;
-    transition: var(--transition);
-  } */
+
 .testimonials_left {
   display: flex;
   flex-direction: column;
@@ -56,10 +51,6 @@
   width: 100%;
   border-radius: 10px;
   height: 48vh;
-  /* height: 20vh; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* box-shadow: 0px 0px 10px rgba(20, 24, 62, .1), 0px 0px 10px rgba(78, 78, 115, .5); */
 }
 
 
@@ -117,26 +108,7 @@
 
 /* Styling for the testimonials slider */
 .testimonials_sliders {
-    width: 90%;
     height: 68%;
-    /* border: 1px solid rgb(249, 245, 249);
-    z-index: 1;
-    position: relative; */
-    /* display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 10px rgba(20, 24, 62, .1), 0px 0px 10px rgba(78, 78, 115, .5);
-    background-color: #ffffff;
-    padding: 38px 24px 38px 44px;
-    transform-style: preserve-3d;
-    transition: all 0.5s;
-    margin: 20px 10px;
-    /* background: linear-gradient(104deg, rgba(109, 93, 207, 1) 0%, rgba(227, 156, 227, 1) 100%); */
-    /* background: linear-gradient(90deg, rgba(29, 11, 70, 1) 0%, rgba(90, 27, 133, 1) 100%); */
-    /* background: linear-gradient(150deg, rgba(90, 27, 133, 1) 0%, rgba(29, 11, 70, 1) 100%); */ 
 }
 
 
@@ -147,10 +119,6 @@
   justify-content: center;
   gap: 20px;
   height: 100%;
-
-  /* width: 90%;
-  height: 68%; */
-  /* border: 1px solid rgb(249, 245, 249); */
   z-index: 1;
   border-radius: 25px;
   box-shadow: 0px 0px 10px rgba(20, 24, 62, .1), 0px 0px 10px rgba(78, 78, 115, .5);
@@ -159,8 +127,6 @@
   transform-style: preserve-3d;
   transition: all 0.5s;
   margin: 20px 10px;
-  /* background: linear-gradient(104deg, rgba(109, 93, 207, 1) 0%, rgba(227, 156, 227, 1) 100%); */
-  /* background: linear-gradient(90deg, rgba(29, 11, 70, 1) 0%, rgba(90, 27, 133, 1) 100%); */
   background: linear-gradient(150deg, rgba(90, 27, 133, 1) 0%, rgba(29, 11, 70, 1) 100%);
 
 }
@@ -186,5 +152,17 @@
 @media screen and (max-width: 830px){
   .testimonials_slider{
     width: auto;
+    flex-direction: column;
+  }
+
+  .testimonials_slider_container{
+    height: auto;
+  }
+  .testimonial_image_container{
+    width: 100%;
+  }
+
+  .testimonial_image_container img {
+    margin-right: 12%;
   }
 }

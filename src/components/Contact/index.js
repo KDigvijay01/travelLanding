@@ -103,7 +103,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="footer scroll_animation_to_top" id="footer">
+    <footer className="footerSection scroll_animation_to_top" id="footer">
       <div className="footerLeftDiv">
         <h1 className="footerLeftDivTitle">Explore.</h1>
         <p className="footerLeftDivSubTitle">Book your trip in minute, get full Control for much longer.</p>

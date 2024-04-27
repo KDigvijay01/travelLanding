@@ -24,19 +24,21 @@ function App() {
       const rect = element.getBoundingClientRect();
 
       const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-      const isElementInView = (rect.top > 0) && (rect.bottom < windowHeight);
+      const isElementInView = (rect.top >= 0) && (rect.bottom <= windowHeight);
       if (isElementInView) {
         // setIsVisible(true);
 
-        if(classList.includes("scroll_animation_to_right")){
-          element.classList.add('animate_to_right');
-        }
-        else if(classList.includes("scroll_animation_to_left")){
-          element.classList.add('animate_to_left');
-        }
-        else if(classList.includes("scroll_animation_to_top")){
-          element.classList.add('animate_to_top');
-        }
+          if(classList.includes("scroll_animation_to_right")){
+            element.classList.add('animate_to_right');
+          }
+          else if(classList.includes("scroll_animation_to_left")){
+            element.classList.add('animate_to_left');
+          }
+          else if(classList.includes("scroll_animation_to_top")){
+            element.classList.add('animate_to_top');
+          }
+
+
       } else {
         if(classList.includes("scroll_animation_to_right")){
           element.classList.remove('animate_to_right');

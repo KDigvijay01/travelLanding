@@ -1,8 +1,19 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import './Testimonials.styles.css';
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+import "./Testimonials.styles.css";
+
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; 
+import 'swiper/css/autoplay'; 
+import SwiperCore from 'swiper/core';
+import 'swiper/css/navigation';
+
+import { Autoplay, Navigation} from 'swiper/modules';
+
+SwiperCore.use([Autoplay, Navigation]);
 
 const dataArray = [
   {
@@ -46,22 +57,20 @@ const dataArray = [
     country: "America",
   },
 
-
-
   // Add more items as needed
 ];
 
 const Testimonials = () => {
-    const settings = {
-        arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 1500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3500, 
-      };
+  const settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+  };
 
   return (
     <section className="testimonials scroll_animation_to_top" id="testimonial">
@@ -70,32 +79,71 @@ const Testimonials = () => {
         <h1 className="testimonials_title">What people say about Us.</h1>
       </div>
       <div className="testimonials_slider_container">
-        <Slider {...settings}>
-          {dataArray.map((item) => (
-            <div className="testimonials_sliders">
-            <div key={item.id} className="testimonials_slider">
-                {/* <img src="assets/testimonials/quote.svg" alt="quote"/> */}
-                <div className="testimonial_image_container">
-                    <img
-                    src={item.icon}
-                    alt={`Testimonial from ${item.name}`}
-                  />
-                </div>
-             <div className="testimonial_text_conatiner">
-                <p className="testimonial_text">{item.text}</p>
-                  <div className="testimonials_details">
-                    <p className="testimonials_name">{item.name}</p>
-                    <p className="testimonials_address">
-                      {item.city}, {item.country}
-                    </p>
-                  </div>
-             </div>
-            
-            </div>
-            </div>
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={3}
+          loop={true}
+          parallax={true}
+          speed={1200}
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
+          // navigation={true}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
 
+            560: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+          }}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          {dataArray.map((item) => (
+            <SwiperSlide>
+              <div className="testimonials_sliders">
+                <div key={item.id} className="testimonials_slider">
+                  {/* <img src="assets/testimonials/quote.svg" alt="quote"/> */}
+                  <div className="testimonial_image_container">
+                    <img
+                      src={item.icon}
+                      alt={`Testimonial from ${item.name}`}
+                    />
+                  </div>
+                  <div className="testimonial_text_conatiner">
+                    <p className="testimonial_text">{item.text}</p>
+                    <div className="testimonials_details">
+                      <p className="testimonials_name">{item.name}</p>
+                      <p className="testimonials_address">
+                        {item.city}, {item.country}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
           ))}
-        </Slider>
+        </Swiper>
       </div>
     </section>
   );

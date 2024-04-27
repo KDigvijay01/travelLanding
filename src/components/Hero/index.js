@@ -18,10 +18,7 @@ const Hero = ({isInView}) => {
         </div>
       </div>
 
-      <img src="assets/hero/imagehero.png" alt="hero" className="heroImage scroll_animation_to_left"
-        data-aos="fade-right"
-        data-aos-duration="1200"
-      />
+      <img src="assets/hero/imagehero.png" alt="hero" className="heroImage scroll_animation_to_left"/>
     </section>
   );
 };
