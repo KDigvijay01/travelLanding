@@ -2,12 +2,10 @@
     /* Styles for the navbar */
     position: relative;
     display: flex;
-    padding: 3% 10%;
+    padding: 2% 10%;
     justify-content: space-between;
     z-index: 1000;
     align-items: center;
-    /* background-color: #fff; */
-    /* border: 2px solid green; */
 
   }
 
